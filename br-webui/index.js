@@ -1355,6 +1355,20 @@ io.on('connection', function(socket) {
 		});
 	});
 	
+	// system setup
+	socket.on('get ardusub version', function(data) {
+		logger.log('get ardusub version');
+		var cmd = child_process.exec(_companion_directory + '/scripts/ardusub.sh', function(error, stdout, stderr) {
+			logger.log(error+stdout+stderr);
+			if (stdout) {
+				logger.log("Version Information Obtained")
+				socket.emit('ardusub version', stdout);
+			} else {
+				logger.log("Version Information not found");
+				socket.emit('ardusub version', "Undefined");
+			}
+		});
+	});
 	
 	// system setup
 	socket.on('update pixhawk', function(data) {
