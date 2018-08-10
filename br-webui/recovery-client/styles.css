@@ -1,0 +1,93 @@
+<!-- CSS file for Companion Recovery Server -->
+
+html, body {
+	height: 100%;
+}
+
+html {
+	padding-top: 85px;
+	padding-bottom: 90px;
+	display: table;
+	margin: auto;
+}
+
+body {
+	border: medium solid grey;
+	margin-top: 100px;
+	margin-left: 600px;
+	margin-right: 600px;
+	margin-bottom: 100px;
+	border-radius: 10px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+h1 {
+	font-family: verdana;
+	font-size: 1.5em;
+	text-align: center;
+	padding: 20px;
+	padding-top: 30px;
+}
+
+hr {
+	text-align: center;
+	width: 80%;
+}
+
+#First {
+	font-size: 14pt;
+	font-family: verdana;
+	color: #2699d0;
+	padding: 10px;
+	text-align: center;
+}
+
+form {
+	padding: 20px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+textarea {
+
+	font-family: verdana; 
+	resize: vertical;
+	border-radius: 10px;
+}
+
+#textarea1 {
+	margin-left: 30px;
+	margin-right: 30px;
+	padding-bottom: 30px;
+}
+
+#submit-button {
+	border-radius: 5px;
+	background-color: #2699d0;
+	border: thin solid #2699d0;
+	color: #ffffff;
+	width: 80px;
+	height: 30px;
+}
+
+#update-button {
+	border-radius: 5px;
+	background-color: #bbbbbb;
+	border: thin solid #bbbbbb;
+	color: #000000;
+	width: 80px;
+	height: 30px;
+}
+
+#update-div {
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+
+<!-- Styles that are divs start with a # sign -->
+<!-- Styles that are classes start with a . -->
+
+
+

@@ -1,0 +1,30 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Companion Recovery Server</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>Companion Recovery Server</h1>
+	<hr>
+	<div id="First">
+		Select an appropriate ".lrz" file to update Companion
+	</div><hr>
+	<div>
+		<form id="form">
+			<input type="file" id="file"/>
+			<input id= "submit-button" type="submit" class="button" value= "Upload" />
+		</form>
+		<div id="update-div">
+			<button id="update-button" onclick='updateNew()'> Update </button>
+		</div>
+		<div id="textarea1">
+			<textarea rows="30" cols="90" id="terminal-output" class="dynamic-parent-width" readonly></textarea>
+		</div>	
+	</div>
+
+	<script src="socket.io.js"></script>
+	<script src="socket.io-file-client.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
